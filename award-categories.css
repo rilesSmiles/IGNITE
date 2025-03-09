@@ -1,0 +1,52 @@
+.title {
+    font-size: 5rem;
+    font-weight: 800;
+    max-width: 70%;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    opacity: 0;
+    position: relative;
+    animation: titleEntrance 2.5s ease forwards;
+    mix-blend-mode: luminosity;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+
+    .title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        max-width: 80%;
+    }
+
+    .hero-subtitle {
+        max-width: 80%;
+        font-size: 1em;
+    }
+    .section-title {
+        font-size: 4.5rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 20px auto;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 15px;
+    }
+    
+    .filter-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .title {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        max-width: 80%;
+    }
+}

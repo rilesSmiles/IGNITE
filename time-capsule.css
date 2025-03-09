@@ -92,7 +92,7 @@
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* File upload styling */
+/* File upload */
 .file-upload-container {
     position: relative;
 }
@@ -191,7 +191,7 @@
     transform: translateY(-2px);
 }
 
-/* Gallery section */
+/* Gallery */
 .gallery-section {
     padding: 80px 0;
 }
@@ -245,7 +245,7 @@
 .gallery-image-container {
     position: relative;
     width: 100%;
-    padding-top: 75%; /* 4:3 aspect ratio */
+    padding-top: 75%;
     overflow: hidden;
 }
 
@@ -291,7 +291,7 @@
     margin-top: auto;
 }
 
-/* Modal */
+/* modal */
 .memory-modal {
     display: none;
     position: fixed;
