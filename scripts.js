@@ -17,7 +17,7 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
 });
 
 const logo = document.getElementById('logo');
-const defaultLogo = 'asset 8.png';
+const defaultLogo = 'Asset 8.png';
 const hoverLogo = 'logo-hover.png';
 
 logo.addEventListener('mouseenter', () => {
