@@ -2,3 +2,6 @@
     background: linear-gradient(180deg, #060608, #7483BF, #FF8217);
     max-height: 40em;
 }
+.title {
+    max-width: 70%;
+}

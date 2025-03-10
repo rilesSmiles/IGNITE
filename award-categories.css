@@ -1,7 +1,7 @@
 .title {
     font-size: 5rem;
     font-weight: 800;
-    max-width: 70%;
+    max-width: 90%;
     margin-bottom: 30px;
     letter-spacing: 2px;
     opacity: 0;
@@ -9,6 +9,26 @@
     animation: titleEntrance 2.5s ease forwards;
     mix-blend-mode: luminosity;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+  position: relative;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+h4 {
+  font-family: ivyepic-variable, sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-stretch: condensed 50%;
+  font-size: small;
+  margin-bottom: 10px;
 }
 
   .accordion-container {
@@ -59,22 +79,22 @@
     transition: all 0.3s ease;
   }
   
-  .arrow:before, .arrow:after {
+  .arrow:after, .arrow:before {
     content: '';
     position: absolute;
     background-color: white;
     transition: all 0.3s ease;
   }
   
-  .arrow:before {
+  .arrow:after {
     width: 100%;
     height: 2px;
-    top: 50%;
-    left: 0;
+    top: 0%;
+    left: 50%;
     transform: translateY(-50%);
   }
   
-  .arrow:after {
+  .arrow:before {
     width: 2px;
     height: 100%;
     top: 0;
@@ -83,24 +103,28 @@
   }
   
   .accordion-item.active .arrow {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  
-  .accordion-item.active .arrow:before {
-    transform: translateY(-50%) rotate(0deg);
-  }
+    transform: translateY(-50%) rotate(220deg);
+  } 
   
   .accordion-item.active .arrow:after {
-    transform: translateX(-50%) rotate(90deg);
+    transform: rotate(360deg);
   }
   
   .accordion-content {
     max-height: 0;
+    padding-left: 20px;
+    padding-top: 20px;
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    transition: 0.9s ease-in-out;
     background-color: rgba(30, 30, 30, 0.6);
     color: white;
   }
+
+  .accordion-item::before .accordion-content {
+    max-height: 520px;
+    padding: 20px;
+  }
+
   
   .accordion-item.active .accordion-content {
     max-height: 500px;
@@ -123,18 +147,98 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 4px;
     width: 6px;
     height: 6px;
-    background-color: #ffcc00; /* IGNITE gold/yellow accent color */
+    background-color: #FF8217;
     border-radius: 50%;
   }
 
+  /* Cards Section */
+.section-title {
+  font-size: 2.5rem;
+  padding: 100px 50px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cards-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 1rem;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+  /*animations */
+  @keyframes titleEntrance {
+    0% {
+        opacity: 0;
+        letter-spacing: 4px;
+        filter: blur(10px);
+        max-width: 90%;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        letter-spacing: 2px;
+        filter: blur(0);
+    }
+}
+@keyframes FadeOut {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+}
 /* Responsive styles */
 @media screen and (max-width: 768px) {
 
     .title {
-        font-size: 2.5rem;
+        font-size: 5rem;
         letter-spacing: 2px;
         max-width: 80%;
     }
@@ -179,7 +283,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .title {
-        font-size: 3.5rem;
+        font-size: 5rem;
         letter-spacing: 2px;
         max-width: 80%;
     }

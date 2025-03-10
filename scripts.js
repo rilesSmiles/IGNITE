@@ -15,3 +15,19 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
         navLinks.style.width = '200px';
     }
 });
+
+const logo = document.getElementById('logo');
+const defaultLogo = 'asset 8.png';
+const hoverLogo = 'logo-hover.png';
+
+logo.addEventListener('mouseenter', () => {
+    logo.src = hoverLogo;
+    logo.classList.remove('default');
+    logo.classList.add('hover');
+});
+
+logo.addEventListener('mouseleave', () => {
+    logo.src = defaultLogo;
+    logo.classList.remove('hover');
+    logo.classList.add('default');
+});
