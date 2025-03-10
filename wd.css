@@ -4,4 +4,6 @@
 }
 .title {
     max-width: 70%;
+    color: #060608;
+    mix-blend-mode:overlay;
 }

@@ -2,7 +2,7 @@
 /* Hero specific styles for time capsule */
 .time-capsule-hero {
     background: linear-gradient(180deg, #000000, hsl(240, 28%, 14%));
-    max-height: 40em;
+    max-height: 65vh;
 }
 
 .title {
@@ -10,7 +10,9 @@
     font-weight: 800;
     margin-bottom: 30px;
     letter-spacing: 2px;
+    padding-top: 20%;
     opacity: 0;
+    max-width: 90%;
     position: relative;
     animation: titleEntrance 2.5s ease forwards;
     mix-blend-mode: luminosity;
@@ -18,8 +20,9 @@
 }
 
 .hero-subtitle {
-    max-width: 700px;
+    max-width: 60%;
     margin: 0 auto 30px;
+    padding-bottom: 10px;
     font-size: 1.2rem;
     opacity: 0;
     animation: fadeIn 1.5s ease forwards;

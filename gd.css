@@ -2,3 +2,8 @@
     background: linear-gradient(180deg, #060608, #C078A6, #78F1C3);
     max-height: 40em;
 }
+
+.title {
+    color: #060608;
+    mix-blend-mode:overlay;
+}

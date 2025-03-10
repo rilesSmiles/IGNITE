@@ -93,7 +93,8 @@ nav {
 }
 
 .nav-links .active {
-    text-decoration-line: underline;
+    opacity: 1;
+    color: #060608;
 }
 
 .nav-links a:hover {
@@ -151,13 +152,13 @@ nav {
 }
 
 .title {
-    color:  rgba(300, 196, 114);
+    color:  #feead0;
     font-size: 12rem;
     font-weight: 900;
     margin-bottom: 30px;
     position: relative;
     animation: titleEntrance 2.5s ease forwards;
-    mix-blend-mode:exclusion;
+    mix-blend-mode:overlay;
     text-shadow: 0 0 20px, rgba(255, 255, 255, 10);
 }
 
@@ -165,7 +166,7 @@ nav {
     display: flex;
     gap: 20px;
     opacity: 0;
-    mix-blend-mode:screen;
+    mix-blend-mode: screen;
     animation: fadeIn 1.5s ease forwards;
     animation-delay: 2.5s;
 }
@@ -185,16 +186,16 @@ nav {
 }
 
 .hero-btn:first-child {
-    background-color: #FDF7FB;
+    background-color: #Fafafa;
     color: #030418;
     border-style: groove;
 }
 
 .hero-btn:last-child {
     background-color: transparent;
-    color: #fff;
+    color: #fafafa;
     border-style: groove;
-    border: 4px solid #fff;
+    border: 2px solid #fafafa;
     border-style: groove;
 }
 
@@ -204,7 +205,8 @@ nav {
 }
 
 .hero-btn:first-child:hover {
-    background-color: #f7b84c;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fafafa;
 }
 
 .hero-btn:last-child:hover {
