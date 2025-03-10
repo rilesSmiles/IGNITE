@@ -65,7 +65,6 @@ nav {
 
 .logo {
     max-width: 40px;
-    grid-column: 1;
     transition: transform 0.5s, opacity 0.9s ease-in-out;
 }
 
@@ -106,12 +105,11 @@ nav {
     color: #030418;
     max-width: min-content;
     border: none;
-    padding: 10px 25px;
+    padding: 10px 20px;
     border-radius: 30px;
     font-variation-settings: "slnt" 0, "wdth" 100, "wght" 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    grid-column: 4;
 }
 
 .contact-btn:hover {
