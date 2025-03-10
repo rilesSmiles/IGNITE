@@ -1,5 +1,5 @@
 .title {
-    font-size: 5rem;
+    font-size: rem;
     font-weight: 800;
     max-width: 90%;
     margin-bottom: 30px;
@@ -154,7 +154,7 @@ h4 {
     border-radius: 50%;
   }
 
-  /* Cards Section */
+/* Cards Section */
 .section-title {
   font-size: 2.5rem;
   padding: 100px 50px 20px;
@@ -176,10 +176,9 @@ h4 {
 
 .card {
   background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
+  border-radius: 9px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  max-width: 300px;
 }
 
 .card:hover {
@@ -207,6 +206,7 @@ h4 {
   opacity: 0.8;
   line-height: 1.5;
 }
+
 
   /*animations */
   @keyframes titleEntrance {
@@ -238,7 +238,7 @@ h4 {
 @media screen and (max-width: 768px) {
 
     .title {
-        font-size: 5rem;
+        font-size: 3rem;
         letter-spacing: 2px;
         max-width: 80%;
     }
@@ -249,20 +249,6 @@ h4 {
     }
     .section-title {
         font-size: 4.5rem;
-    }
-    
-    .modal-content {
-        width: 95%;
-        margin: 20px auto;
-    }
-    
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 15px;
-    }
-    
-    .filter-container {
-        flex-wrap: wrap;
     }
 
     @media (max-width: 768px) {
