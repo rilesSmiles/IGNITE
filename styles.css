@@ -310,7 +310,6 @@ footer {
 @media screen and (max-width: 768px) {
     nav {
         padding: 10px 20px;
-
     }
 
     .logo {
@@ -319,6 +318,11 @@ footer {
     
     .nav-links {
         display: none;
+    }
+
+    .nav-links .active {
+        opacity: 0.5;
+        color: #fafafa;
     }
     
     .title {
@@ -383,7 +387,7 @@ footer {
     }
 }
 
-/* Menu toggle for mobile */
+/* Menu toggle */
 .menu-toggle {
     display: none;
     flex-direction: column;
