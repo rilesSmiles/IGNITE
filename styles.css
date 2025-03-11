@@ -94,6 +94,7 @@ nav {
 
 .nav-links .active {
     opacity: 1;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 400;
     color: #060608;
 }
 
@@ -157,7 +158,6 @@ nav {
     font-weight: 900;
     margin-bottom: 30px;
     position: relative;
-    z-index: 2;
     animation: titleEntrance 2.5s ease forwards;
     mix-blend-mode: overlay;
     text-shadow: 0 0 20px, rgba(255, 255, 255, 10);
@@ -167,7 +167,6 @@ nav {
     font-family: ivyepic-variable, sans-serif;
     font-variation-settings: "slnt" 0, "wdth" 70, "wght"100;
     font-size: 16em;
-    z-index: 1;
     mix-blend-mode: overlay;
     transform: translateY(-250px);
     margin-bottom: -220px;
