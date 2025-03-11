@@ -152,16 +152,26 @@ nav {
 }
 
 .title {
-    color:  #feead0;
+    color:  #fafafa;
     font-size: 12rem;
     font-weight: 900;
     margin-bottom: 30px;
     position: relative;
+    z-index: 2;
     animation: titleEntrance 2.5s ease forwards;
-    mix-blend-mode:overlay;
+    mix-blend-mode: overlay;
     text-shadow: 0 0 20px, rgba(255, 255, 255, 10);
 }
 
+.year {
+    font-family: ivyepic-variable, sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 70, "wght"100;
+    font-size: 16em;
+    z-index: 1;
+    mix-blend-mode: overlay;
+    transform: translateY(-250px);
+    margin-bottom: -220px;
+}
 .hero-buttons {
     display: flex;
     gap: 20px;
@@ -329,7 +339,15 @@ footer {
         font-size: 5.5rem;
         letter-spacing: 5px;
     }
-    
+    .year {
+        font-family: ivyepic-variable, sans-serif;
+        font-variation-settings: "slnt" 0, "wdth" 70, "wght"100;
+        font-size: 8em;
+        z-index: 1;
+        mix-blend-mode: overlay;
+        transform: translateY(-135px);
+        margin-bottom: -115px;
+    }
     .hero-buttons {
         flex-direction: column;
     }
@@ -361,6 +379,15 @@ footer {
         font-size: 10rem;
     }
     
+    .year {
+        font-family: ivyepic-variable, sans-serif;
+        font-variation-settings: "slnt" 0, "wdth" 70, "wght"100;
+        font-size: 13em;
+        z-index: 1;
+        mix-blend-mode: overlay;
+        transform: translateY(-210px);
+        margin-bottom: -200px;
+    }
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
     }
