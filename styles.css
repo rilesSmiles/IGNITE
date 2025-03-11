@@ -157,6 +157,7 @@ nav {
     font-size: 12rem;
     font-weight: 900;
     margin-bottom: 30px;
+    letter-spacing: 0.1px;
     position: relative;
     animation: titleEntrance 2.5s ease forwards;
     mix-blend-mode: overlay;
@@ -167,6 +168,7 @@ nav {
     font-family: ivyepic-variable, sans-serif;
     font-variation-settings: "slnt" 0, "wdth" 70, "wght"100;
     font-size: 16em;
+    letter-spacing: 0.001px;
     mix-blend-mode: overlay;
     transform: translateY(-250px);
     margin-bottom: -220px;
