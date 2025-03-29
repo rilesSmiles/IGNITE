@@ -23,6 +23,16 @@
   overflow: hidden;
 }
 
+.student-votes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 5em;
+}
+
 h4 {
   font-family: ivyepic-variable, sans-serif;
   font-weight: 100;

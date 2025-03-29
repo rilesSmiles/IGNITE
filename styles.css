@@ -44,6 +44,7 @@ p{
 li{
     font-family: ivyepic-variable, sans-serif;
     font-variation-settings: "slnt" 0, "wdth" 100, "wght" 100;
+    line-height: 15px;
 }
 
 button {
