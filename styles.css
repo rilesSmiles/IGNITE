@@ -15,6 +15,11 @@ h1{
     font-family: ivyepic-variable, sans-serif;
     font-variation-settings: "slnt" 0, "wdth" 70, "wght" 800;
 }
+
+.bigger {
+    font-size: xx-large;
+}
+
 h2{
     font-family: ivyepic-variable, sans-serif;
     font-variation-settings: "slnt" 0, "wdth" 90, "wght" 150;
