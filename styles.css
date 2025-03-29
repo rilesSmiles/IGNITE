@@ -243,11 +243,7 @@ nav {
 
 /* Event Info */
 .event-info-container {
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 70px 50px;
+    flex: 1;
 }
 
 .event-image {
@@ -263,7 +259,12 @@ nav {
 }
 
 .event-details {
-    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 50px;
 }
 
 .event-details h2 {
@@ -274,6 +275,7 @@ nav {
 .event-details p {
     line-height: 1.6;
     font-size: 1.1em;
+    flex: 1;
 }
 
 .cta{
@@ -460,6 +462,9 @@ footer {
     .event-info-container {
         flex-direction: column;
         text-align: left;
+    }
+    .event-details {
+        flex-direction: column;
     }
 
     .event-image {
