@@ -1,5 +1,5 @@
 .title {
-    font-size: rem;
+    font-size: 8rem;
     font-weight: 800;
     max-width: 90%;
     padding-bottom: 0;
@@ -30,6 +30,19 @@ h4 {
   font-stretch: condensed 50%;
   font-size: small;
   margin-bottom: 10px;
+}
+
+.IGNITE-details {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 50px;
+}
+
+.award-info {
+  width: 60%;
+  align-content: center;
 }
 
   .accordion-container {
