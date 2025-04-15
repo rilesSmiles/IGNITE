@@ -231,6 +231,45 @@ h4 {
   line-height: 1.5;
 }
 
+/*Nominee Sections*/
+.nom-cards-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nom-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.nom-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 9px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  h2 {
+    font-size: 0.9em;
+  }
+  h1 {
+    font-variation-settings: "slnt" 0, "wdth" 75, "wght" 300;  
+    font-size: 1.3em;
+  }
+  h3 {
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 800;  
+    font-size: 1.5em;
+    line-height: 1.1em;
+  }
+}
+
+.nom-section-title {
+  padding: 100px 50px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
   /*animations */
   @keyframes titleEntrance {
@@ -274,6 +313,11 @@ h4 {
     .section-title {
         font-size: 4.5rem;
     }
+    .nom-cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
 
     @media (max-width: 768px) {
         .accordion-container {
@@ -289,6 +333,7 @@ h4 {
           padding: 15px;
         }
       }
+    
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
